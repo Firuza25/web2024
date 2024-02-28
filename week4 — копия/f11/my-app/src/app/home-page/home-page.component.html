@@ -1,0 +1,49 @@
+
+<app-tags></app-tags>
+
+
+<div class="sneakers__imgs">
+  <ul>
+    <li *ngFor="let sneakerss of sneakers let i = index">
+      <a>
+        <img src="{{sneakerss.imageUrl}}" alt="">
+      </a>
+      <div class="content">
+        <div class="name"> {{sneakerss.name}} </div>
+        <span class="favorite" (click)="toggleLike(sneakerss)"> ❤️‍🔥 {{ sneakerss.likeCounter }} </span>
+        <div class="products__description">
+          <div class="price"> 
+            <span> price: {{sneakerss.price}} </span>
+          </div>
+          <div class="color"> 
+            <span> color: {{sneakerss.color}} </span>
+          </div>
+          
+
+          <div class="size"> 
+            <span> Size: {{sneakerss.size}} </span>
+          </div>
+                     
+
+          <div class="share">
+            <span> <a href="https://t.me/share/url?url={{sneakerss}}&text=Look!" >
+              <button>share📨</button>
+                </a></span>
+          </div> 
+          <div class="buy">
+            <span>
+              <a href="{{sneakerss.kaspiUrl}} " >
+                <button>BUY</button></a>
+              </span>
+          </div>
+
+          <div class="delete">
+            <button (click)="deleteProduct(i)">DELETE</button>
+          </div>
+
+              
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>

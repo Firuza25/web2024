@@ -1,0 +1,19 @@
+div{
+    display: flex;
+    flex-wrap: wrap;
+  
+}
+
+div a{
+    background-color: rgb(245, 64, 37);
+    border-radius: 10rem;
+    font-weight: 600;
+    color: white;
+    margin:auto;
+    width: 200px;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+    
+
+}

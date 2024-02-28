@@ -1,0 +1,52 @@
+header{
+    background-color: brown;
+    border-bottom: 3px solid greenyellow;
+    width: 100%;
+    height: 68px;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+a:hover, logo:hover{
+    background-color: greenyellow;
+    color: brown;
+}
+  
+h1{
+    color: white;
+    font-weight: lighter;
+      
+}
+.container{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+ 
+.button, button {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 16px;
+    border-radius: 3px;
+    font-size: 14px;
+    cursor: pointer;
+    color: white;
+    border: none;
+  }
+
+
+  .fancy-button {
+    background-color: white;
+    color: red;
+  }
+  
+  .fancy-button i.material-icons {
+    padding-right: 4px;
+  }
+.logo{
+  color: white;
+  font-size: 30px;
+  margin-left: 20px;
+}

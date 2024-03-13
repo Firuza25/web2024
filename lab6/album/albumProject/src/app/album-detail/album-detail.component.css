@@ -1,0 +1,67 @@
+body {
+    font-family: sans-serif;
+    top: 0;
+    padding: 0;
+  }
+  
+  .container {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 500px;
+    
+  }
+  
+  .album-title {
+    font-size: 24px;
+    margin-top: 200px;
+    margin-left: 20px;
+  }
+  
+  .album-title-input {
+    width: 50%;
+    padding: 10px;
+    font-size: 18px;
+    border: 3px solid #ccc;
+    margin-left: 20px;
+    font-size: 25px;
+  }
+  
+
+  .btn {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
+  .btn-update{
+    width: 5%;
+    height: 50px;
+    background-color: #007bff;
+    font-size: 25px;
+    color: #fff;
+    margin-top: 40px;
+    margin-left: 20px;
+    
+  }
+  .btn-back{
+    width: 6%;
+    height: 50px;
+    border-radius: 15px;
+    background-color:chocolate;
+    font-size: 25px;
+    margin-top: 20px;
+
+  }
+
+
+  .photoslink {
+    margin-left: 20px;
+    font-size: 40px;
+    color: #000
+
+  }
+
+  .loading-message{
+    margin-top: 200px;
+  }

@@ -30,13 +30,15 @@ export class HomePageComponent implements OnInit {
           this.sneakers = this.sneakersService.getAll();
         }
       })
+      
   }
   toggleLike(sneakers: Sneakers): void {
     sneakers.likeCounter++;
   }
 
   deleteProduct(index:number): void {
-    this.sneakers.splice(index, 1)
+    this.sneakers.splice(index, 1);
+    this.sneakersService.deleteProduct(index);
   }
 
 

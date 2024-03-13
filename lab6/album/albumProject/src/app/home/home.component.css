@@ -1,0 +1,12 @@
+.welcome{
+    color:brown;
+    flex: auto;
+    text-align: center;
+    font-size: 50px;
+}
+.goAlbum{
+    text-decoration: none;
+    color:cadetblue;
+    font-size:30px;
+    margin-left: 20px;
+}

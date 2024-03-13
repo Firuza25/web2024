@@ -7,7 +7,6 @@ import { HomePageComponent } from './home-page/home-page.component';
 
 export const routes: Routes = [
     {path:'', component: HomePageComponent},
-    {path:'search/:searchTerm', component:HomePageComponent},//типа путь
     {path:'tag/:tag', component:HomePageComponent}
 ];
 

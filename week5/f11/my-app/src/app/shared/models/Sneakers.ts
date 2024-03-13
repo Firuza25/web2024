@@ -1,5 +1,4 @@
 export interface Sneakers {
-    [x: string]: any;
     id: number;
     name: string;
     price: string;

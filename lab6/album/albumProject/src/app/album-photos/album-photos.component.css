@@ -1,0 +1,29 @@
+.photos-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .photos-list li {
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 200px;
+  }
+  
+  .photos-list li img {
+    width: 100%;
+    height: 100%;
+  }
+
+ .returnback{
+    margin-top: 5%;
+    width: 6%;
+    height: 50px;
+    border-radius: 15px;
+    background-color:chocolate;
+    font-size: 25px;
+
+
+  }

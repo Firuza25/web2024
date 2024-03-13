@@ -6,6 +6,8 @@ import { Tag } from '../../shared/models/Tags';
 })
 export class SneakersService {
 
+   private snikers = [...sn_products];
+
   constructor() { }
 
   getAllTags(): Tag[]{
@@ -18,15 +20,11 @@ export class SneakersService {
     ];
   }
 
-  getAllFoodsByTag(tag: string): Sneakers[] {
-    return tag == "All" ?
-      this.getAll() :
-      this.getAll().filter(sneakers => sneakers['tags']?.includes(tag));
+  getAll(): Sneakers[] {
+      return this.snikers;
   }
 
-
-
-  getAll(): Sneakers[] {
-      return sn_products;
+  deleteProduct(index:number): void {
+    this.snikers.splice(index, 1)
   }
 }

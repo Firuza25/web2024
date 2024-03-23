@@ -4,6 +4,7 @@ import { Album } from '../module';
 import { Observable } from 'rxjs';
 import { Photo } from '../module';
 
+
 @Injectable({
   providedIn: 'root'
 })
@@ -11,6 +12,7 @@ export class AlbumsService {
 
   constructor(private client: HttpClient) { }
   MAIN_URL= 'https://jsonplaceholder.typicode.com/'
+  
   getAlbums(): Observable<Album[]>{
     return this.client.get<Album[]>(this.MAIN_URL + 'albums');
   }

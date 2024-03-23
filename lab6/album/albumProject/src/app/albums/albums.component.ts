@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ALBUMS } from '../my_db';
 import { Album } from '../module';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
@@ -13,6 +12,7 @@ import { FormsModule, NgModel } from '@angular/forms';
   templateUrl: './albums.component.html',
   styleUrl: './albums.component.css'
 })
+
 export class AlbumsComponent  implements OnInit{
   albums!: Album[];
   newAlbum: string;
